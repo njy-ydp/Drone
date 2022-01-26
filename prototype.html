@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Drone Project</title>
+	<link rel="stylesheet" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav id="nav-title">
+			<div style="font-size: 1.5rem; margin: auto 1rem;"><a href="https://njy-ydp.github.io/">Jooyoung Noh</a></div>
+			<div class="material-icons md-light md-inactive" id="nav-icon">menu</div>
+		</nav>
+		<nav>
+			<ul id="nav-menu">
+				<li class="nav-item no-sub"><a href="https://njy-ydp.github.io/">Home</a></li>
+				<li class="nav-item" id="nav-cur"><a href="./material.html" style="color: white;">Drone Project</a></li>
+				<li class="nav-item"><a href="">Earthquake Discord Bot</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="mini-header">
+		<nav id="nav-menu-parent">
+			<ul>
+				<li class="nav-item no-sub"><a href="https://njy-ydp.github.io/">Home</a></li>
+				<li class="nav-item drone-btn" id="nav-cur-mini"><a href="./material.html" style="color: white;">Drone Project</a></li>
+				<li class="nav-item"><a href="">Earthquake Discord Bot</a></li>
+			</ul>
+			<div class="menu-bg"></div>
+		</nav>
+		<nav id="drone-sub-parent">
+			<ul id="drone-sub">
+				<li id="drone-sub-title">Drone</li>
+				<li><a href="./material.html">재료</a></li>
+				<li><a href="./design.html">디자인</a></li>
+				<li><a href="./prototype.html" style="color: #5fa3e7;">프로토타입</a></li>
+				<li><a href="./mainmodel.html">본 모델</a></li>
+				<li><a href="./references.html">참고자료</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="wrapper">
+        <div id="contents">
+            <ul id="sidebar">
+				<li id="sidebar-title">Drone</li>
+                <li><a href="./material.html">재료</a></li>
+                <li><a href="./design.html">디자인</a></li>
+                <li><a href="./prototype.html" style="color: #5fa3e7;">프로토타입</a></li>
+                <li><a href="./mainmodel.html">본 모델</a></li>
+                <li><a href="./references.html">참고자료</a></li>
+            </ul>
+            <div style="margin: 1rem">
+                <h2>프로토타입</h2>
+                <h3>3D 프린터로 부품 출력</h3>
+				<div class="img-flex" style="max-width:40rem;">
+					<img src="./src/proto1.png">
+					<img src="./src/proto2.png">
+					<img src="./src/proto3.png">
+					<img src="./src/proto4.png">
+				</div>
+				<h3>회로 연결</h3>
+				<div class="img-flex">
+					<img src="./src/proto5.png">
+					<img src="./src/proto6.png">
+				</div>
+				<h3>작동 테스트</h3>
+				<img src="./src/proto7.png">
+				<p>전류가 너무 낮아 라즈베리파이가 정상적으로 켜지지 않는 문제가 발생하여 배터리 두개를 직렬 연결하려 했으나, 전압 강하 모듈이 없어 테스트가 불가능해 테스트는 수행하지 못했습니다.</p>
+				<h3>조립</h3>
+				<div class="img-flex">
+					<img src="./src/proto8.png">
+					<img src="./src/proto9.png">
+					<img src="./src/proto10.png">
+				</div>
+				<p>실제 구동을 하기는 어려울 것 같아 사이즈, 무게 등을 보기 위해 프로토타입 대신 목업을 제작하는 방향으로 선회했습니다.</p>
+				<h3>문제점 & 개선방안</h3>
+				<p>전류가 매우 낮아 전기 공급이 원할하게 되지 않음</p>
+				<p>-> 배터리를 직렬로 연결하고 강하 모듈을 사용</p>
+				<p>3D 프린터로 출력한 부품들의 구멍 크기가 모델링보다 작게 나와 부품이 들어가지 못함</p>
+				<p>-> 모델링 할 때 치수를 더 크게 설정</p>
+				<p>크고 무거움</p>
+				<p>-> 경량화, 소형화 (라즈베리파이 대신 아두이노 나노를 사용하는 것으로 변경, 더 작은 배터리 사용)</p>
+				<p>기능추가</p>
+				<p>-> 자동으로 착륙할 수 있도록 적외선 센서를 하단에 탑재</p>
+				<p>-> 드론 끝에 LED 부착</p>
+				<h3>프로토타입 제작 후기</h3>
+				<p>기능 구현에 실패한 점, 실제 크기를 가늠하지 못하고 모델링을 너무 크게 한 점이 가장 아쉽습니다. 프로토타입의 실패를 바탕으로 많은 점들을 배웠고, 개선 방안도 마련하게 되었습니다. 본 모델을 만들 때는 꼭 드론을 날리는 데 성공했으면 좋겠습니다.</p>
+            </div>
+        </div>
+		<footer>
+			<div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between;">
+				<div style="margin: 1rem;">Copyright © Jooyoung Noh</div>
+				<a href="https://github.com/njy-ydp" style="height: 1.5rem; margin: 1rem;"><img src="./src/GitHub-Mark-Light-32px.png" style="height: 1.5rem;"></a>
+			</div>
+		</footer>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
